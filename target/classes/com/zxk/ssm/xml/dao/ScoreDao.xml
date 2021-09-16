@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zxk.ssm.xml.dao.ScoreDao">
+
+
+    <insert id="insertScore" parameterType="com.zxk.ssm.xml.model.po.Score">
+        INSERT INTO tb_score ( score, user_id, create_time, update_time )
+        VALUES
+            ( #{score}, #{userId},#{createTime}, #{updateTime} )
+    </insert>
+
+
+</mapper>
